@@ -1,0 +1,60 @@
+@banner_sm: 320px;
+@banner_md: 520px;
+@banner_lg: 650px;
+
+.banner {
+
+  &__content {
+    z-index: 25;
+    transition: 500ms ease;
+    &:hover {
+      background-color: fade(@darkBlue, 90%);
+    }
+  }
+  &__bg {
+    z-index: 4;
+    background-color: #000;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  @media @min {
+    height: @banner_sm
+  }
+  @media @tablet {
+    height: @banner_md;
+  }
+  @media @desktop {
+    height: @banner_lg;
+  }
+
+  &-small, &__small {
+    @media @min {
+      height: @banner_sm*.5
+    }
+    @media @tablet {
+      height: @banner_md*.5;
+    }
+    @media @desktop {
+      height: @banner_lg*.5;
+    }
+  }
+
+  &-medium, &__medium {
+    @media @min {
+      height: @banner_sm*.75
+    }
+    @media @tablet {
+      height: @banner_md*.75;
+    }
+    @media @desktop {
+      height: @banner_lg*.75;
+    }
+  }
+
+  &__padded {
+    height: auto;
+    padding: @spaced*4 0;
+  }
+
+}

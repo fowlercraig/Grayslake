@@ -1,0 +1,37 @@
+#header {
+
+  padding: @spaced 0;
+  position: relative;
+  z-index: 99;
+
+  &__mission {
+    @media @min {
+      .font_size(24);
+    }
+    @media @tablet {
+      .font_size(32);
+    }
+    @media @desktop {
+      .font_size(42);
+    }
+  }
+
+  &--logo {
+    margin: 0;
+    font-weight: 700;
+    color: @mainColor;
+  }
+
+  &-navigation {
+
+    @media @min {
+      text-align: left;
+    }
+
+    @media @tablet {
+      text-align: right;
+    }
+
+  }
+
+}
