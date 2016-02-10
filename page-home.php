@@ -10,6 +10,7 @@
 
 			<div class="banner bg__color-bgGray relative">
 				<div class="banner__content covered">
+					<a href="<?php echo $feature['url']; ?>" class="covered covered__link"></a>
 					<div class="wrapper wrapper__extra">
 						<h2 class="bannter__title"><?php echo $feature['title']; ?></h2>
 						<?php echo $feature['desc']; ?>
@@ -27,6 +28,7 @@
 
 			<div class="banner banner-small bg__color-bgGray relative">
 				<div class="banner__content covered">
+					<a href="<?php echo $feature['url']; ?>" class="covered covered__link"></a>
 					<div class="wrapper wrapper__extra">
 						<h2 class="bannter__title"><?php echo $feature['title']; ?></h2>
 						<?php echo $feature['desc']; ?>
