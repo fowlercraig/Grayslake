@@ -3,8 +3,21 @@
   padding: @spaced 0;
   position: relative;
   z-index: 99;
+  overflow: hidden;
+  background-color: @white;
+  box-shadow: 0 -@spaced*2 @spaced*2 fade(@black25, 4%);
 
   &__mission {
+
+    .accentFont();
+    color: @darkBlue;
+    line-height: 1.4;
+    position: relative;
+
+    &-wrapper {
+      position: relative;
+    }
+
     @media @min {
       .font_size(24);
     }
@@ -23,6 +36,10 @@
   }
 
   &-navigation {
+
+    a {
+      color: @darkBlue;
+    }
 
     @media @min {
       text-align: left;

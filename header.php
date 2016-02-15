@@ -30,10 +30,12 @@
 
 <?php if(is_front_page()): ?>
 <header id="header__mission" class="banner banner__padded bg__color-bgGray relative">
-  <div class='fs-row'>
-    <div class="fs-cell fs-all-full text-center">
+  <div id="header__mission-wrapper">
+    <div class='fs-row'>
+      <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered text-center">
 <?php echo get_post_field('post_content', 6); ?>
-    </div> 
+      </div> 
+    </div>
   </div>
 </header>
 <?php endif; ?>
