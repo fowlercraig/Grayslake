@@ -7,6 +7,7 @@
 // @codekit-prepend "../bower_components/formstone/dist/js/lightbox.js"
 // @codekit-prepend "../bower_components/formstone/dist/js/checkbox.js"
 // @codekit-prepend "../bower_components/formstone/dist/js/tabs.js"
+// @codekit-prepend "../bower_components/formstone/dist/js/equalize.js"
 
 // Other Plugins
 // @codekit-prepend "../bower_components/components-modernizr/modernizr.js"

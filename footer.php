@@ -3,7 +3,7 @@
 
 <hr class="invisible compact">
 
-<div id="footer__misc">
+<div id="footer__misc" class="equalize" data-equalize-options='{"target":".equalize-target"}'>
   <div class="fs-row">
     <div class="fs-cell fs-lg-5 fs-md-half fs-sm-3">
 

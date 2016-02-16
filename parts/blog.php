@@ -9,7 +9,7 @@ $current_args = array(
 $current_posts = get_posts( $current_args );
 ?>
 
-<div class="footer-block wrapper wrapper-extra  bg__color-bgGray">
+<div class="footer-block wrapper wrapper-extra equalize-target bg__color-bgGray">
   <header class="footer-header text-center">
     <h3><?php the_field('footer_blog', 6); ?></h3>
   </header>

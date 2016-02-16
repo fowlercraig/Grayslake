@@ -32,4 +32,5 @@ function mobileMenu(){
 
 $(document).ready(function(){
 	mobileMenu();
+	$('.equalize').equalize();
 });

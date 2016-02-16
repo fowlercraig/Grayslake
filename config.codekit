@@ -2517,7 +2517,7 @@
 		},
 	"\/src\/bower_components\/Formstone\/dist\/js\/equalize.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/bower_components\/Formstone\/dist\/js\/equalize.js",
 		"outputAbbreviatedPath": "\/src\/bower_components\/Formstone\/dist\/js\/min\/equalize-min.js",

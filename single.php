@@ -1,12 +1,20 @@
 <?php Themewrangler::setup_page();get_header(); ?>
 
 <div class="fs-row">
-<section id="content" role="main" class="<?php echo $mainContent_width; ?>">
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<?php get_template_part( 'entry' ); ?>
-<?php if ( ! post_password_required() ) comments_template( '', true ); ?>
-<?php endwhile; endif; ?>
-<footer class="footer"><?php get_template_part( 'nav', 'below-single' ); ?></footer>
-</section>
-<?php get_sidebar(); ?>
+<div class="fs-cell fs-all-full">
+<article <?php post_class('bg__color-bgGray'); ?>>
+<div class="fs-row">
+<div class="fs-cell fs-lg-8 fs-md-5 fs-sm-3 fs-centered">
+
+<header class="text-center"><h1 class="hentry__title"><?php the_title(); ?></h1></header>
+
+<?php the_post(); the_content(); ?>
+<hr class="invisible">
+
 </div>
+</div>
+</article>
+</div>
+</div>
+
+<?php get_footer(); ?>
