@@ -8,12 +8,12 @@
 
 <?php if($features): $i = 0; foreach($features as $feature): $i++; if ($i == 1): ?>
 
-			<div class="banner bg__color-bgGray relative">
+			<div class="home__module banner bg__color-bgGray relative">
 				<div class="banner__content covered">
 					<a href="<?php echo $feature['url']; ?>" class="covered covered__link"></a>
 					<div class="wrapper wrapper__extra">
-						<h2 class="bannter__title"><?php echo $feature['title']; ?></h2>
-						<?php echo $feature['desc']; ?>
+						<h2 class="home__module-title bannter__title"><span><?php echo $feature['title']; ?></span></h2>
+						<div class="home__module-desc"><?php echo $feature['desc']; ?></div>
 					</div>
 				</div>
 				<?php if($feature['image']): ?><div class="banner__bg covered" style="background-image:url(<?php echo $feature['image']['sizes']['large']; ?>);"></div><?php endif;?>
@@ -26,12 +26,12 @@
 
 <?php if($features): $i = 0; foreach($features as $feature): $i++; if ($i != 1): ?>
 
-			<div class="banner banner-small bg__color-bgGray relative">
+			<div class="home__module banner banner-small bg__color-bgGray relative">
 				<div class="banner__content covered">
 					<a href="<?php echo $feature['url']; ?>" class="covered covered__link"></a>
 					<div class="wrapper wrapper__extra">
-						<h2 class="bannter__title"><?php echo $feature['title']; ?></h2>
-						<?php echo $feature['desc']; ?>
+						<h2 class="home__module-title bannter__title"><span><?php echo $feature['title']; ?></span></h2>
+						<div class="home__module-desc"><?php echo $feature['desc']; ?></div>
 					</div>
 				</div>
 				<?php if($feature['image']): ?><div class="banner__bg covered" style="background:url(<?php echo $feature['image']['sizes']['large']; ?>);"></div><?php endif;?>

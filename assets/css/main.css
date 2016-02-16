@@ -4911,3 +4911,42 @@ input[type=button] {
 .widget-area .xoxo {
   padding-left: 0;
 }
+.home__module {
+  -webkit-transition: 1200ms ease;
+  transition: 1200ms ease;
+  margin-top: 12.5px;
+  opacity: 0;
+}
+.home__module-title {
+  color: #fff;
+}
+.home__module-title span {
+  position: relative;
+}
+.home__module-title span:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: -5px;
+  background-color: #fff;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+.home__module-desc {
+  opacity: 0;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+  color: #fff;
+}
+.home__module:hover .home__module-desc {
+  opacity: 1;
+}
+.home__module:hover .home__module-title span:after {
+  width: 100%;
+}
+.home__module.loaded {
+  margin-top: 0;
+  opacity: 1;
+}

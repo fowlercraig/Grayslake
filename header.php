@@ -25,7 +25,7 @@
 
 </head>
 
-<body class="fs-grid">
+<body <?php body_class('fs-grid'); ?>>
 <div id="wrapper">
 
 <?php if(is_front_page()): ?>

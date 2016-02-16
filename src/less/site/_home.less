@@ -1,0 +1,51 @@
+.home {
+	&__module {
+
+		&-title {
+			color: @white;
+			span {
+				position: relative;
+				&:after {
+					content: '';
+					display: block;
+					height: 2px;
+					width: 0;
+					position: absolute;
+					bottom: -5px;
+					background-color: @white;
+					transition: 300ms ease;
+				}
+			}
+		}
+
+		&-desc {
+			opacity: 0;
+			transition: 500ms ease;
+			color: @white;
+		}
+
+		&:hover {
+			.home__module {
+				&-desc {
+					opacity: 1;
+				}
+				&-title {
+					span {
+						&:after {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+
+		transition: 1200ms ease;
+		margin-top: @spaced/2;
+		opacity: 0;
+
+		&.loaded {
+			margin-top: 0;
+			opacity: 1;
+		}
+	}
+}
