@@ -37,6 +37,8 @@
 				<?php if($feature['image']): ?><div class="banner__bg covered" style="background:url(<?php echo $feature['image']['sizes']['large']; ?>);"></div><?php endif;?>
 			</div>
 
+			<hr class="invisible compact">
+
 <?php endif; endforeach; endif; ?>
 
 		</div>

@@ -1,11 +1,29 @@
 #header {
 
-  padding: @spaced 0;
+  padding: @spaced 0 0;
   position: relative;
   z-index: 99;
   overflow: hidden;
   background-color: @white;
   box-shadow: 0 -@spaced*2 @spaced*2 fade(@black25, 4%);
+
+  &.banner {
+    &--clone {
+      padding: 0;
+      position: fixed;
+      width: 100%;
+      left: 0;
+      box-shadow: 0 0 @spaced fade(@black, 10%);
+      transform: translateY(-100%);
+      transition: all 300ms ease-in-out;
+      .divider,.hide {
+        display: none;
+      }
+    }
+    &--stick {
+      transform: translateY(0%);
+    }
+  }
 
   &__mission {
 
@@ -36,6 +54,8 @@
   }
 
   &-navigation {
+
+    border-top: 1px solid @lighterGray;
 
     a {
       color: @darkBlue;

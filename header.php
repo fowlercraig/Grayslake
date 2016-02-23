@@ -44,16 +44,15 @@
 
 <header id="header">
   <div class="fs-row">
-    <div class="fs-cell fs-lg-third fs-md-half fs-sm-2 fs-centered">
+    <div class="fs-cell fs-lg-third fs-md-half fs-sm-2 fs-centered hide">
       <h1 id="header__logo" class="text-center">
         <a href="/"><img src="/assets/img/grayslake_logo.svg" alt="<?php bloginfo( 'sitename' ) ?>" class="img-responsive" /></a>
       </h1>
     </div>
     <menu id="header-navigation" class="fs-cell fs-all-full">
-      <hr class="divider compact">
       <div class="text-center">
         <?php echo strip_tags(wp_nav_menu( $mainMenu ), '<a>' ); ?>
-        <a href="#" target="_blank" class="btn btn--nav btn--nav_icon ss-social-circle ss-facebook"></a>
+        <a href="#" target="_blank" class="btn btn--nav btn--nav_icon ss-social-circle ss-linkedin"></a>
         <a href="#" target="_blank" class="btn btn--nav btn--nav_icon ss-social-circle ss-youtube"></a>
       </div>
     </menu>

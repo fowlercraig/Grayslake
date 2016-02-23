@@ -11,3 +11,33 @@
   }
 
 }
+
+.footer {
+	&-block {
+		.fs {
+			&-carousel {
+				&-pagination {
+					border-top: 1px solid @lighterGray;
+					padding-top: @spaced;
+					margin-top: @spaced*2;
+					//position: absolute;
+					//bottom: 0;
+				}
+			}
+		}
+	}
+	&-post {
+		p {
+			.font_size(28);
+			line-height: 1.4;
+			color: @darkBlue;
+			.accentFont();
+			&:before {
+				content: '"'
+			}
+			&:after {
+				content: '"'
+			}
+		}
+	}
+}

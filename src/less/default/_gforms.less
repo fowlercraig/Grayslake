@@ -1,32 +1,42 @@
 .gform {
 	&_wrapper {
 		min-width: 100%;
-//		background: @white;
+		margin-bottom: 0!important;
 		@media @mobile {
 			padding: 0;
 		}
 		@media @tablet {
-//			padding: 10px 0px 10px 17px;
-//			box-shadow: 0 1px 4px fade(@black, 20%);
 		}
 		@media @desktop {
-//			padding: 10px 0px 10px 20px;
 		}
 	}
 	&_body {
 		min-width: 100%;
 	}
 	&_fields {
+		.ginput {
+			&_container {
+				margin-top: 0!important;
+				input, textarea {
+					padding: 8px!important;
+					// width: 100%;
+					// min-width: 100%!important;
+				}
+			}
+		}
 		.gfield {
+
+			margin-bottom: @spaced/2!important;
+
 			&_label {
-				font-weight: 400!important;
-				margin-bottom: 0px!important;
 				display: none;
 			}
+
 			&_description {
 				padding-top: 0!important;
 			}
-			input {
+
+			input, textarea {
 				margin-bottom: 0;
 			}
 			&:before {
@@ -36,6 +46,12 @@
 	}
 	&_footer {
 		margin-top: 0!important;
+		padding-top: 0!important;
 		padding-bottom: 0!important;
+		text-align: center;
+		.button {
+			background: @darkBlue;
+			margin-bottom: 0;
+		}
 	}
 }

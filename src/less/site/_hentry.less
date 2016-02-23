@@ -1,5 +1,59 @@
 .hentry {
 
+	padding: @spaced*3 0;
+	background-size: cover;
+	background-position: top center;
+
+	@media @min {
+		padding: @spaced 0;
+	}
+
+	@media @tablet {
+		padding: @spaced*2 0;
+	}
+
+	@media @desktop {
+		padding: @spaced*3 0;
+		margin: 0 @spaced;
+	}
+
+	@media @max {
+		margin: 0 @spaced*2
+	}
+
+	&__header {
+		margin-bottom: @spaced*2;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-weight: 800;
+		span {
+			padding-bottom: 5px;
+			border-bottom: 3px solid @white;
+		}
+	}
+
+	&__content {
+		color: @white;
+
+		@media @min {
+			.font_size(20);	
+		}
+
+		@media @tablet {
+			.font_size(28);	
+		}
+		
+		line-height: 1.21;
+		text-align: center;
+		.accentFont();
+		p {
+			margin-bottom: @spaced;
+		}
+	}
+
   .page {
     
     &__content {

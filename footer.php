@@ -3,14 +3,15 @@
 
 <hr class="invisible compact">
 
-<div id="footer__misc" class="equalize" data-equalize-options='{"target":".equalize-target"}'>
+<div id="footer__misc" class="equalize" data-equalize-options='{"target":".equalize-target", "minWidth":"980px"}'>
   <div class="fs-row">
-    <div class="fs-cell fs-lg-5 fs-md-half fs-sm-3">
+    <div class="fs-cell fs-lg-6 fs-md-full fs-sm-3">
 
 <?php include locate_template('parts/blog.php'); ?>
 
     </div>
-    <div class="fs-cell fs-lg-7 fs-md-half fs-sm-3">
+    <hr class="invisible compact fs-cell fs-lg-hide fs-md-full fs-sm-3">
+    <div class="fs-cell fs-lg-6 fs-md-full fs-sm-3">
 
 <?php include locate_template('parts/contact.php'); ?>
 
