@@ -5052,3 +5052,23 @@ input[type=button] {
   margin-top: 0;
   opacity: 1;
 }
+.page-press .hentry__content {
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+}
+.page-press .hentry__content a {
+  font-family: 'Apercu', sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+}
+.page-press .hentry__content .fs-cell {
+  margin-bottom: 12.5px;
+  padding-bottom: 12.5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  min-height: 120px;
+  position: relative;
+}
+.page-press .hentry__content .fs-cell .centered {
+  width: 100%;
+}
