@@ -36,7 +36,8 @@
 	}
 
 	&__content {
-		color: @white;
+		//color: @white;
+		line-height: 1.21;
 
 		@media @min {
 			.font_size(20);	
@@ -45,12 +46,27 @@
 		@media @tablet {
 			.font_size(28);	
 		}
+
+		&--md {
+
+			line-height: 1.4;
+
+			@media @min {
+				.font_size(15);	
+			}
+
+			@media @tablet {
+				.font_size(19);	
+			}
+
+		}
 		
-		line-height: 1.21;
+		color: @white;
 		text-align: center;
 		.accentFont();
 		p {
 			margin-bottom: @spaced;
+			color: inherit;
 		}
 	}
 

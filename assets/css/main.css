@@ -4160,6 +4160,12 @@ img.rounded {
 .bg__color-white {
   background: #fff;
 }
+.bg__color-white--25 {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+}
+.bg__color-white--50 {
+  background: rgba(255, 255, 255, 0.5) !important;
+}
 .bg__color-gray {
   background: #999999;
 }
@@ -4983,8 +4989,8 @@ input[type=button] {
   border-bottom: 3px solid #fff;
 }
 .hentry__content {
-  color: #fff;
   line-height: 1.21;
+  color: #fff;
   text-align: center;
   font-family: "adobe-garamond-pro";
   font-weight: 300;
@@ -5001,8 +5007,24 @@ input[type=button] {
     font-size: 1.75rem;
   }
 }
+.hentry__content--md {
+  line-height: 1.4;
+}
+@media screen and (min-width: 300px) {
+  .hentry__content--md {
+    font-size: 15px;
+    font-size: 0.9375rem;
+  }
+}
+@media screen and (min-width: 740px) {
+  .hentry__content--md {
+    font-size: 19px;
+    font-size: 1.1875rem;
+  }
+}
 .hentry__content p {
   margin-bottom: 25px;
+  color: inherit;
 }
 .hentry .page__content {
   padding: 50px 0;
