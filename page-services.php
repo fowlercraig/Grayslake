@@ -17,22 +17,23 @@ $thumb_url = $thumb_url_array[0];
 
 <div class="hentry__content hentry__content--md">
 
+<?php $services = get_field('services'); ?>
+<nav>
+<?php foreach ($services as $service): ?>
+<a href="#<?php echo seoUrl($service['title']); ?>" class="btn btn--tab color__white accent tab js-tabs" data-tabs-group="tab-1"><?php echo $service['title']; ?></a>
+<?php endforeach; ?>
+</nav>
+
 <div class="fs-row">
 
 <?php $services = get_field('services'); ?>
 <?php $i = 0; foreach ($services as $service): ?>
 
-<?php if($i == 0): ?><div class="fs-cell fs-lg-half fs-md-full fs-sm-3"><?php endif; ?>
-<?php if($i == 2): ?><div class="fs-cell fs-lg-half fs-md-full fs-sm-3"><?php endif; ?>
-
-<div class="text-left">
+<div id="<?php echo seoUrl($service['title']); ?>" class="fs-cell fs-lg-10 fs-md-full fs-sm-3 fs-centered">
 <hr class="divider bg__color-white--50">
-<h4 class="text-left color__white"><?php echo $service['title']; ?></h4>
+<!--<h4 class="text-left color__white"><?php echo $service['title']; ?></h4>-->
 <?php echo $service['description']; ?>
 </div>
-
-<?php if($i == 1): ?></div><?php endif; ?>
-<?php if($i == 4): ?></div><?php endif; ?>
 
 <?php $i++; endforeach; ?>
 </div>

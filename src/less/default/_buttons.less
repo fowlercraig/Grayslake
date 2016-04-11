@@ -172,4 +172,22 @@ input[type=button] {
     width: 100%;
   }
 
+  &--tab {
+    .headerFont();
+    background: none;
+    margin-bottom: 0;
+    &:hover {
+      background: none;
+      color: @white;
+    }
+    &.fs-tabs {
+      &-enabled {
+        color: @white50;
+      }
+      &-active {
+        color: @white;
+      }
+    }
+  }
+
 }
