@@ -11,7 +11,7 @@ $thumb_url = $thumb_url_array[0];
 	<div class="fs-row">
 		<div class="fs-cell fs-lg-11 fs-md-5 fs-sm-3 fs-centered">
 			<header class="hentry__header">
-				<h2 class="hentry__title text-center color__white"><span><?php the_title(); ?></span></h2>
+				<h2 class="hentry__title color__white"><span><?php the_title(); ?></span></h2>
 			</header>
 			<div class="hentry__content hentry__content--md">
 				<nav>
