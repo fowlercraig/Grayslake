@@ -4875,7 +4875,6 @@ input[type=button] {
   padding: 25px 0 0;
   position: relative;
   z-index: 99;
-  overflow: hidden;
   background-color: #fff;
   box-shadow: 0 -50px 50px rgba(0, 0, 0, 0.04);
 }
@@ -4933,6 +4932,10 @@ input[type=button] {
 }
 #header-navigation {
   border-top: 1px solid #E7E7EC;
+}
+#header-navigation.scroll-to-fixed-fixed {
+  z-index: 999;
+  background-color: #fff;
 }
 #header-navigation a {
   color: #373F4D;
@@ -5117,7 +5120,12 @@ input[type=button] {
 .page-press .hentry__content .fs-cell .centered {
   width: 100%;
 }
-.page-services .hentry__content .fs-tabs-content {
+.page-services .hentry__content .fs-tabs-content,
+.page-profile .hentry__content .fs-tabs-content {
   font-size: 24px;
   font-size: 1.5rem;
+}
+.page-services .hentry__content .fs-tabs-content p,
+.page-profile .hentry__content .fs-tabs-content p {
+  font-size: inherit;
 }

@@ -13,3 +13,4 @@
 // Other Plugins
 // @codekit-prepend "../bower_components/components-modernizr/modernizr.js"
 // @codekit-prepend "../bower_components/headhesive.js/dist/headhesive.js"
+// @codekit-prepend "../bower_components/ScrollToFixed/jquery-scrolltofixed.js"

@@ -3,7 +3,7 @@
   padding: @spaced 0 0;
   position: relative;
   z-index: 99;
-  overflow: hidden;
+  //overflow: hidden;
   background-color: @white;
   box-shadow: 0 -@spaced*2 @spaced*2 fade(@black25, 4%);
 
@@ -56,6 +56,13 @@
   &-navigation {
 
     border-top: 1px solid @lighterGray;
+
+    &.scroll-to-fixed {
+      &-fixed {
+        z-index: 999;
+        background-color: @white;
+      }
+    }
 
     a {
       color: @darkBlue;
