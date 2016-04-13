@@ -31,6 +31,17 @@ $thumb_url = $thumb_url_array[0];
 					<div id="client-list" class="fs-cell fs-lg-10 fs-md-full fs-sm-3 fs-centered">
 						<hr class="divider bg__color-white--50">
 						<?php the_field('client_list'); ?>
+						<?php $images = get_field('client_gallery'); ?>
+						<div class="fs-row">
+						<?php foreach($images as $image): ?>
+							<div class="fs-cell fs-lg-third fs-md-third fs-sm-half bg--white">
+								<div class="wrapper bg__color-white rounded">
+									<img src="<?php echo $image['url']; ?>" class="img-responsive" />
+								</div>
+								<hr class="invisible compact">
+							</div>
+						<?php endforeach; ?>
+						</div>
 					</div>
 				</div><!-- Row -->
 			</div>
