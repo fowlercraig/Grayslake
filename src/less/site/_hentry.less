@@ -1,8 +1,10 @@
 .hentry {
 
 	padding: @spaced*3 0;
-	background-size: cover;
+	background-size: 100% auto;
 	background-position: top center;
+	background-repeat: no-repeat;
+	background-color: #19202A;
 
 	@media @min {
 		padding: @spaced 0;
@@ -60,9 +62,13 @@
 			}
 
 		}
+
+		nav {
+			text-align: center;
+		}
 		
 		color: @white;
-		text-align: center;
+		//text-align: center;
 		.accentFont();
 		p {
 			margin-bottom: @spaced;

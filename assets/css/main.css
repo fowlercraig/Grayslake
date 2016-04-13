@@ -4813,8 +4813,8 @@ input[type=button] {
 .banner__bg {
   z-index: 4;
   background-color: #000;
-  background-size: cover;
-  background-position: center center;
+  background-size: 100% auto;
+  background-position: top center;
 }
 @media screen and (min-width: 300px) {
   .banner {
@@ -4978,8 +4978,10 @@ input[type=button] {
 }
 .hentry {
   padding: 75px 0;
-  background-size: cover;
+  background-size: 100% auto;
   background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #19202A;
 }
 @media screen and (min-width: 300px) {
   .hentry {
@@ -5017,7 +5019,6 @@ input[type=button] {
 .hentry__content {
   line-height: 1.21;
   color: #fff;
-  text-align: center;
   font-family: "adobe-garamond-pro";
   font-weight: 300;
 }
@@ -5047,6 +5048,9 @@ input[type=button] {
     font-size: 19px;
     font-size: 1.1875rem;
   }
+}
+.hentry__content nav {
+  text-align: center;
 }
 .hentry__content p {
   margin-bottom: 25px;
