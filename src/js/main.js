@@ -23,18 +23,19 @@ $(window).scroll(function() {
 })
 
 function header(){
-	var options = {
-	    offset: '#content-wrapper',
-	    classes: {
-	        clone:   'banner--clone',
-	        stick:   'banner--stick',
-	        unstick: 'banner--unstick'
-	    },
-      onInit:    function () {
-        $('.banner--clone .text-center').prepend('<a href="#" class="btn btn--nav btn--logo_small"><img class="alignnone size-full wp-image-683" src="/wp-content/uploads/2016/02/g.png" alt="g" width="27" height="26" /></a>');
-      },
-	};
-	var banner = new Headhesive('#header', options);
+	//var options = {
+	//    offset: '#content-wrapper',
+	//    classes: {
+	//        clone:   'banner--clone',
+	//        stick:   'banner--stick',
+	//        unstick: 'banner--unstick'
+	//    },
+  //    onInit:    function () {
+  //      $('.banner--clone .text-center').prepend('<a href="#" class="btn btn--nav btn--logo_small"><img class="alignnone size-full wp-image-683" src="/wp-content/uploads/2016/02/g.png" alt="g" width="27" height="26" /></a>');
+  //    },
+	//};
+	//var banner = new Headhesive('#header', options);
+	$('#header-navigation').scrollToFixed();
 }
 
 function mobileMenu(){
