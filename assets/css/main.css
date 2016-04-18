@@ -4869,7 +4869,21 @@ input[type=button] {
 }
 .banner__padded {
   height: auto;
-  padding: 100px 0;
+}
+@media screen and (min-width: 300px) {
+  .banner__padded {
+    padding: 50px 0;
+  }
+}
+@media screen and (min-width: 740px) {
+  .banner__padded {
+    padding: 75px 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  .banner__padded {
+    padding: 100px 0;
+  }
 }
 #header {
   padding: 25px 0 0;
@@ -4910,20 +4924,26 @@ input[type=button] {
 }
 @media screen and (min-width: 300px) {
   #header__mission {
-    font-size: 24px;
-    font-size: 1.5rem;
+    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 @media screen and (min-width: 740px) {
   #header__mission {
-    font-size: 32px;
-    font-size: 2rem;
+    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 980px) {
   #header__mission {
-    font-size: 42px;
-    font-size: 2.625rem;
+    font-size: 28px;
+    font-size: 1.75rem;
+  }
+}
+@media screen and (min-width: 1220px) {
+  #header__mission {
+    font-size: 36px;
+    font-size: 2.25rem;
   }
 }
 #header--logo {
