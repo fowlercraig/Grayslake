@@ -1,7 +1,7 @@
 // @codekit-prepend "site/default-ui.js"
 
 $(window).load(function(){
-	if ( $('body').hasClass('home')) {
+	if ( $('body').hasClass('page-template-page-home')) {
 		setTimeout(function(){
 			$('.home__module').each(function(i,el) {
 				var $this = $(this);
