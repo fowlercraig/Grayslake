@@ -10,7 +10,7 @@
   <?php foreach( $current_posts as $post ):  ?>
   	<div class="footer-post text-center">
   		<div class="footer-post__content"><?php echo $post['quote']; ?></div>
-  		<a class="footer-post__name" href="<?php echo $post['link'] ?><"><?php echo $post['attribution'] ?></a>
+  		<!--<a class="footer-post__name" href="<?php echo $post['link'] ?><"><?php echo $post['attribution'] ?></a>-->
   	</div>
   <?php endforeach;  ?>
   </div>
