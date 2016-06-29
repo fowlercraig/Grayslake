@@ -53,7 +53,7 @@
   <menu id="header-navigation">
     <div class="text-center">
       <?php echo strip_tags(wp_nav_menu( $mainMenu ), '<a>' ); ?>
-      <a href="#" target="_blank" class="btn btn--nav btn--nav_icon ss-social-circle ss-linkedin"></a>
+      <!--<a href="https://www.linkedin.com/in/paul-habibi-a6995a86" target="_blank" class="btn btn--nav btn--nav_icon ss-social-circle ss-linkedin"></a>-->
       <a href="#" target="_blank" class="btn btn--nav btn--nav_icon ss-social-circle ss-youtube"></a>
     </div>
   </menu>
