@@ -9,8 +9,8 @@
   <div class="carousel" data-carousel-options='{"autoHeight":true,"controls":false}'>
   <?php foreach( $current_posts as $post ):  ?>
   	<div class="footer-post text-center">
-  		<?php echo $post['quote']; ?>
-  		<a href="<?php echo $post['link'] ?><"><?php echo $post['attribution'] ?></a>
+  		<div class="footer-post__content"><?php echo $post['quote']; ?></div>
+  		<a class="footer-post__name" href="<?php echo $post['link'] ?><"><?php echo $post['attribution'] ?></a>
   	</div>
   <?php endforeach;  ?>
   </div>

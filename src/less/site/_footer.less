@@ -27,17 +27,18 @@
 		}
 	}
 	&-post {
-		p {
-			.font_size(28);
-			line-height: 1.4;
-			color: @darkBlue;
-			.accentFont();
-			&:before {
-				content: '"'
-			}
-			&:after {
-				content: '"'
-			}
-		}
+    &__content {
+      line-height: 1.4;
+      .font_size(28);
+      color: @darkBlue;
+      .accentFont();
+      margin-bottom: @spaced/2;
+      small {
+        display: block;
+      }
+    }
+    &__name {
+      .mainFont();
+    }
 	}
 }
