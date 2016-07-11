@@ -19,7 +19,9 @@
 		}
 
 		&-desc {
-			opacity: 0;
+			@media @desktop {
+				opacity: 0;	
+			}
 			transition: 500ms ease;
 			color: @white;
 		}
