@@ -29,7 +29,7 @@
 <div id="wrapper">
 
 <?php if(is_front_page()): ?>
-<header id="header__mission" class="banner banner__padded bg__color-bgGray relative">
+<header id="header__mission" class="banner banner__padded bg__color-darkBlue_fade relative">
   <div id="header__mission-wrapper">
     <div class='fs-row'>
       <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered text-center">
