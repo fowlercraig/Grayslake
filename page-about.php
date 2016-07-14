@@ -15,9 +15,9 @@ $thumb_url = $thumb_url_array[0];
 			</header>
 			<div class="hentry__content hentry__content--md">
 				<nav>
-					<a href="#about" class="btn btn--tab color__white accent tab js-tabs" data-tabs-group="tab-1">About the Firm</a>
-					<a href="#meet-the-principal" class="btn btn--tab color__white accent tab js-tabs" data-tabs-group="tab-1">Meet Our Principal</a>
-					<a href="#client-list" class="btn btn--tab color__white accent tab js-tabs" data-tabs-group="tab-1">Client List</a>
+					<a href="#about" class="btn btn--tab color__white accent tab js-tabs" data-tabs-options='{"mobileMaxWidth":"100px"}' data-tabs-group="tab-1">About the Firm</a>
+					<a href="#meet-the-principal" class="btn btn--tab color__white accent tab js-tabs" data-tabs-options='{"mobileMaxWidth":"100px"}' data-tabs-group="tab-1">Meet Our Principal</a>
+					<a href="#client-list" class="btn btn--tab color__white accent tab js-tabs" data-tabs-options='{"mobileMaxWidth":"100px"}' data-tabs-group="tab-1">Client List</a>
 				</nav>
 				<div class="fs-row">
 					<div id="about" class="fs-cell fs-lg-10 fs-md-full fs-sm-3 fs-centered">

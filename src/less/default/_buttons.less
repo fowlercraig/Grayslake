@@ -176,6 +176,14 @@ input[type=button] {
     .headerFont();
     background: none;
     margin-bottom: 0;
+    @media @min {
+      .font_size(13);
+      padding: 0 10px;
+    }
+    @media @tablet {
+      .font_size(16);
+      padding: 0 15px;
+    }
     &:hover {
       background: none;
       color: @white;

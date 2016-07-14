@@ -1,6 +1,22 @@
 </div>
 <!-- Content Wrapper -->
 
+<hr class="invisible">
+
+<div class="footer-clients fs-row">
+  <div class="fs-cell fs-all-full">
+    <div class="footer-clients__carousel carousel" data-carousel-options='{"show": 4, "pagination": false, "controls":true, "autoAdvance": true, "autoTime": 5000}'>
+<?php the_field('client_list',18); ?>
+<?php $images = get_field('client_gallery'); ?>
+<?php foreach($images as $image): ?>
+      <div class="wrapper bg__color-white rounded">
+        <img src="<?php echo $image['url']; ?>" class="img-responsive" />
+      </div>
+<?php endforeach; ?>
+    </div>
+  </div>
+</div>
+
 <hr class="invisible compact">
 
 <div id="footer__misc" class="equalize" data-equalize-options='{"target":".equalize-target", "minWidth":"980px"}'>

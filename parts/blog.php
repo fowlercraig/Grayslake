@@ -6,7 +6,7 @@
   <header class="footer-header text-center">
     <h3><?php the_field('footer_blog', 6); ?></h3>
   </header>
-  <div class="carousel" data-carousel-options='{"autoHeight":true,"controls":false}'>
+  <div class="carousel" data-carousel-options='{"autoHeight":true,"controls":false, "autoAdvance": true, "autoTime": 5000}'>
   <?php foreach( $current_posts as $post ):  ?>
   	<div class="footer-post text-center">
   		<div class="footer-post__content"><?php echo $post['quote']; ?></div>
