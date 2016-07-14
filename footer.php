@@ -3,6 +3,10 @@
 
 <hr class="invisible">
 
+<header class="footer-header text-center">
+  <h3>Representative Clients</h3>
+</header>
+
 <div class="footer-clients fs-row">
   <div class="fs-cell fs-all-full">
     <div class="footer-clients__carousel carousel" data-carousel-options='{"show": 4, "pagination": false, "controls":true, "autoAdvance": true, "autoTime": 5000}'>
