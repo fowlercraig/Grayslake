@@ -9,7 +9,7 @@
 
 <div class="footer-clients fs-row">
   <div class="fs-cell fs-all-full">
-    <div class="footer-clients__carousel carousel" data-carousel-options='{"show": { "740px": 2, "980px": 3, "1220px": 4 }, "pagination": false, "controls":true, "autoAdvance": true, "autoTime": 5000}'>
+    <div class="footer-clients__carousel carousel" data-carousel-options='{"show": { "740px": 2, "980px": 3, "1220px": 4 }, "pagination": false, "controls":true, "autoAdvance": true, "autoTime": 10000}'>
 <?php $images = get_field('client_gallery',18); ?>
 <?php if($images): ?>
 <?php foreach($images as $image): ?>
