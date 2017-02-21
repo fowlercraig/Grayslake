@@ -49,5 +49,8 @@ function mobileMenu(){
 $(document).ready(function(){
 	mobileMenu();
   header();
-	$('.equalize').equalize();
 });
+
+setTimeout(function(){
+	$('.equalize').equalize();
+},1500);
